@@ -56,7 +56,7 @@ function evenArrays(){
     if (array1.length < array2.length){
         for (i=array1.length; i<array2.length; i++){
         array1.push(Math.floor(Math.random() * 9));
-    } 
+        } 
     } else {
         for (i=array2.length; i<array1.length; i++){
             array2.push(Math.floor(Math.random() * 9));
