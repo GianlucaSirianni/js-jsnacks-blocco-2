@@ -47,15 +47,24 @@ function oddIndex(){
 
 //Crea due array che hanno un numero di elementi diversi.  Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
 
-array1 = [1, 2, 3, 4, 5, 6, 7];
+array1 = [1, 2, 3, 4, 5, 6];
 array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 document.getElementById("arr1Before").innerHTML = array1.length;
 document.getElementById("arr2Before").innerHTML = array2.length;
 
 function evenArrays(){
+    if (array1.length < array2.length){
+        for (i=array1.length; i<array2.length; i++){
+        array1.push(Math.floor(Math.random() * 9));
+    } 
+    } else {
+        for (i=array2.length; i<array1.length; i++){
+            array2.push(Math.floor(Math.random() * 9));
+        } 
+    }
 
-    for (i=array1.length; i<array2.length; i++)
-    array1.push(Math.floor(Math.random() * 9));
+
+
     document.getElementById("magic").innerHTML = '*magic happens*';
     
     document.getElementById("arr1After").innerHTML = array1.length;
