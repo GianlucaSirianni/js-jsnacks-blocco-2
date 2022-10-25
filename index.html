@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSnacks</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <h2>Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo:</h2>
+    <input type="text" placeholder="Number" id="userNum">
+    <label for="userNum">Write a number</label>
+    <button class="submitButton" onclick="evenOrOdd(); return false">Generate</button>
+    <h3 id="evenOdd"></h3>
+    <br><br>
+
+    <h2>Generatore di “nomi e cognomi” casuali:</h2>
+    <button class="submitButton" onclick="nameSurname(); return false">Generate</button>
+    <ul id="nameSurnameGenerator"></ul>
+    <br><br>
+
+    <h2>Crea un array di numeri interi e fai la somma di tutti gli elementi  che sono in posizione (indice) dispari:</h2>
+    <button class="submitButton" onclick="oddIndex(); return false">Generate</button>
+    <ul id="numSumsOdd"></ul>
+    <br><br>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>
